@@ -1,0 +1,41 @@
+<h1 class="cart__heading">Your <span class="cart__span">Cart</span></h1>
+<div class="cart__main-wrapper">
+  <div class="cart__container">
+    <figure class="cart__image-wrapper">
+      <img
+        src="/assets/images/empty-cart.png"
+        alt="An image of empty cart"
+        class="cart__image"
+      />
+    </figure>
+  </div>
+  <div class="cart__checkout-container">
+    <div class="cart__sub-total">
+      <p class="cart__sub-total-title">Sub Total</p>
+      <p class="cart__sub-total-amount" id="sub-total-amount"></p>
+    </div>
+    <div class="cart__discount">
+      <p class="cart__discount-title">Discount</p>
+      <p class="cart__discount-amount" id="discount-amount"></p>
+    </div>
+    <div class="cart__promo-code">
+      <p class="cart__promo-code-title">Voucher</p>
+      <input
+        type="text"
+        title="It can contain only Alphanumerics!"
+        pattern="[a-z A-Z ]{2,25}"
+        name="voucher"
+        class="cart__promo-code-input"
+        placeholder="Unavailable"
+        disabled
+        required
+      />
+    </div>
+    <div class="cart__horizontal-bar"></div>
+    <div class="cart__total">
+      <p class="cart__total-title">Total</p>
+      <p class="cart__total-amount" id="total-amount"></p>
+    </div>
+    <button class="button" id="checkout-button">Checkout</button>
+  </div>
+</div>

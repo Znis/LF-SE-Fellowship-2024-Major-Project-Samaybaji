@@ -1,0 +1,46 @@
+<h3 class="dashboard__heading">Menu</h3>
+<div class="dashboard__container" id="create-menu-container">
+  <h3 class="dashboard__container-heading">Create Menu</h3>
+  <form class="dashboard__form" id="create-menu-form" autocomplete="false">
+    <div class="form__group">
+      <label for="menu-title" class="form__label">Menu Title:</label>
+      <input
+        id="menu-title"
+        name="menu-title"
+        class="form__inputbox"
+        placeholder="Title"
+        type="text"
+        required
+      />
+    </div>
+    <div class="form__group">
+      <label for="menu-description" class="form__label">Description:</label>
+      <textarea
+        id="menu-description"
+        name="menu-description"
+        class="form__inputbox"
+        placeholder="Description"
+        type="text"
+        required
+      ></textarea>
+    </div>
+    <p class="form__error-messsage"></p>
+    <button type="submit" class="button" id="create-menu-button">
+      Create Menu
+    </button>
+  </form>
+</div>
+<div class="dashboard__container" id="add-item-container">
+  <h3 class="dashboard__container-heading">Add Menu Item</h3>
+
+  <button class="button" id="add-menu-item-button">Add Item</button>
+</div>
+
+<div class="dashboard__container" id="in-stock-menu-container">
+  <h3 class="dashboard__container-heading">In Stock Menu Item</h3>
+  <div class="dashboard_-accordion" id="in-stock-menu"></div>
+</div>
+<div class="dashboard__container" id="out-of-stock-menu-container">
+  <h3 class="dashboard__container-heading">Out of Stock Menu Item</h3>
+  <div class="dashboard__accordion" id="out-of-stock-menu"></div>
+</div>

@@ -1,0 +1,109 @@
+<h3 class="modal-form__heading" id="menu-item-creation-heading"></h3>
+
+<form id="main-form" class="modal-form__form">
+  <i
+    class="fa-solid fa-xmark modal-form__cross-button"
+    id="modal-cross-button"
+  ></i>
+  <div class="form__row-group">
+    <div class="form__group">
+      <label for="name" class="form__label">Menu Item Name:</label>
+      <input
+        type="text"
+        id="menu-item-name"
+        name="name"
+        class="form__inputbox"
+        placeholder="Menu Item Name"
+        required
+      />
+    </div>
+    <div class="form__group">
+      <label for="portion" class="form__label">Portion:</label>
+      <input
+        type="text"
+        id="menu-item-portion"
+        name="portion"
+        class="form__inputbox"
+        placeholder="Menu Item Portion"
+        required
+      />
+    </div>
+  </div>
+  <div class="form__row-group">
+    <div class="form__group">
+      <label for="price" class="form__label">Menu Item Price:</label>
+      <input
+        class="form__inputbox"
+        id="menu-item-price"
+        name="price"
+        placeholder="Price"
+        type="number"
+        required
+      />
+    </div>
+
+    <div class="form__group">
+      <label for="isPopular" class="form__label">Is Popular:</label>
+      <input
+        type="checkbox"
+        class="form__checkbox-input"
+        id="menu-is-popular"
+        name="isPopular"
+      />
+    </div>
+  </div>
+
+  <div class="form__row-group">
+    <div class="form__group">
+      <label for="menuImage" class="form__label">Menu Item Image:</label>
+      <input
+        type="file"
+        id="menu-item-image"
+        name="menuImage"
+        class="form__inputbox"
+        accept="image/*"
+        required
+      />
+    </div>
+  </div>
+  <h3 class="modal-form__heading" id="dish-creation-heading"></h3>
+  <div class="form__row-group">
+    <div class="form__group">
+      <label for="description" class="form__label">Description:</label>
+      <textarea
+        id="dish-description"
+        name="description"
+        class="form__inputbox"
+        placeholder="Description"
+        type="text"
+        required
+      ></textarea>
+    </div>
+  </div>
+  <div class="form__row-group">
+    <div class="form__group">
+      <label for="attributes" class="form__label">Attributes:</label>
+      <input
+        class="form__inputbox"
+        id="dish-attributes"
+        name="attributes"
+        placeholder="Attributes"
+        type="text"
+        required
+      />
+    </div>
+    <div class="form__group">
+      <label for="items" class="form__label">Items:</label>
+      <input
+        class="form__inputbox"
+        id="dish-items"
+        name="items"
+        placeholder="Items"
+        type="text"
+        required
+      />
+    </div>
+  </div>
+  <p class="form__error-message"></p>
+  <button type="submit" class="button" id="form-submit-button"></button>
+</form>

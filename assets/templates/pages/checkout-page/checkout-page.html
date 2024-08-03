@@ -1,0 +1,209 @@
+<h1 class="checkout__heading">
+  Order <span class="checkout__span">Checkout</span>
+</h1>
+<form class="checkout__form-container" id="checkout-form" autocomplete="off">
+  <div class="checkout__left-container">
+    <div class="checkout__success-container">
+      <h3 class="checkout__success-heading">
+        Your order has been placed successfully.
+      </h3>
+      <div class="checkout__order-summary">
+        <h3 class="checkout__order-summary-heading">Order Summary</h3>
+        <p class="checkout__order-summary-attribute">
+          Name:
+          <span
+            class="checkout__order-summary-attribute-value"
+            id="order-summary-name"
+          ></span>
+        </p>
+        <p class="checkout__order-summary-attribute">
+          Phone Number:
+          <span
+            class="checkout__order-summary-attribute-value"
+            id="order-summary-phone"
+          ></span>
+        </p>
+        <p class="checkout__order-summary-attribute">
+          Order Date:
+          <span
+            class="checkout__order-summary-attribute-value"
+            id="order-summary-date"
+          ></span>
+        </p>
+        <p class="checkout__order-summary-attribute">
+          Order Time:
+          <span
+            class="checkout__order-summary-attribute-value"
+            id="order-summary-time"
+          ></span>
+        </p>
+        <p class="checkout__order-summary-attribute">
+          Address:
+          <span
+            class="checkout__order-summary-attribute-value"
+            id="order-summary-address"
+          ></span>
+        </p>
+        <p class="checkout__order-summary-attribute">
+          Payment Method:
+          <span
+            class="checkout__order-summary-attribute-value"
+            id="order-summary-payment-method"
+          ></span>
+        </p>
+        <p class="checkout__order-summary-attribute">
+          Additional Note:
+          <span
+            class="checkout__order-summary-attribute-value"
+            id="order-summary-note"
+          ></span>
+        </p>
+      </div>
+    </div>
+    <div class="checkout__accordion">
+      <div class="checkout__accordion-item">
+        <div class="checkout__accordion-header">
+          <div class="checkout__accordion-title-wrapper">
+            <i
+              class="fa-solid fa-circle-check checkout__accordion-header-icon"
+            ></i>
+            <p class="checkout__accordion-title">Billing Address</p>
+          </div>
+          <i
+            class="fa-solid fa-angle-down checkout__accordion-header-trailing-icon"
+          ></i>
+        </div>
+        <div class="checkout__accordion-content">
+          <input
+            class="checkout__input"
+            type="text"
+            placeholder="Full Name"
+            id="order-fullname"
+            name="customer_name"
+            required
+          />
+          <input
+            class="checkout__input"
+            id="order-phone"
+            name="customer_phone"
+            placeholder="Mobile Number"
+            type="tel"
+            minlength="10"
+            maxlength="14"
+            required
+          />
+          <input
+            class="checkout__input-datetime"
+            type="date"
+            id="order-date"
+            name="order_date"
+            required
+          />
+          <input
+            class="checkout__input-datetime"
+            type="time"
+            id="order-time"
+            name="order_time"
+            required
+          />
+          <textarea
+            name="note"
+            id="order-note"
+            class="checkout__input"
+            placeholder="Additional Note"
+            maxlength="500"
+          ></textarea>
+        </div>
+      </div>
+      <div class="checkout__accordion-item">
+        <div class="checkout__accordion-header">
+          <div class="checkout__accordion-title-wrapper">
+            <i
+              class="fa-solid fa-truck-fast checkout__accordion-header-icon"
+            ></i>
+            <p class="checkout__accordion-title">Shipping Address</p>
+          </div>
+          <i
+            class="fa-solid fa-angle-down checkout__accordion-header-trailing-icon"
+          ></i>
+        </div>
+        <div class="checkout__accordion-content">
+          <div class="checkout__address-mapbox"></div>
+          <input
+            class="checkout__input"
+            type="text"
+            placeholder="Address"
+            id="order-address"
+            name="delivery_address"
+            required
+          />
+        </div>
+      </div>
+      <div class="checkout__accordion-item">
+        <div class="checkout__accordion-header">
+          <div class="checkout__accordion-title-wrapper">
+            <i
+              class="fa-solid fa-credit-card checkout__accordion-header-icon"
+            ></i>
+            <p class="checkout__accordion-title">Card Details</p>
+          </div>
+          <i
+            class="fa-solid fa-angle-down checkout__accordion-header-trailing-icon"
+          ></i>
+        </div>
+        <div class="checkout__accordion-content">
+          <p class="checkout__accordion-content-title">
+            Select Payment Method:
+          </p>
+          <div class="checkout__radio-button-wrapper">
+            <input
+              type="radio"
+              id="cod"
+              name="payment_method"
+              value="cod"
+              checked
+            />
+            <label for="cod">Cash on Delivery</label>
+          </div>
+          <div class="checkout__radio-button-wrapper">
+            <input
+              type="radio"
+              id="online"
+              name="payment_method"
+              value="online"
+            />
+            <label for="online">Online</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="checkout__right-container">
+    <div class="checkout__cart">
+      <div class="checkout__cart-container"></div>
+      <button class="button" id="edit-cart-button">Edit Cart</button>
+    </div>
+
+    <div class="checkout__order-billing">
+      <div class="order-billing__sub-total">
+        <p class="order-billing__sub-total-title">Sub Total</p>
+        <p class="order-billing__sub-total-amount" id="sub-total-amount"></p>
+      </div>
+      <div class="order-billing__delivery">
+        <p class="order-billing__delivery-title">Delivery</p>
+        <p class="order-billing__delivery-amount" id="delivery-amount"></p>
+      </div>
+      <div class="order-billing__horizontal-bar"></div>
+      <div class="order-billing__total">
+        <p class="order-billing__total-title">Total</p>
+        <p class="order-billing__total-amount" id="total-amount"></p>
+      </div>
+    </div>
+    <p class="form__error-message"></p>
+    <button type="submit" class="button" id="confirm-order-button">
+      Confirm Order
+      <i class="fa-solid fa-arrow-right button__icon"></i>
+    </button>
+    <button class="button" id="track-order-button">Track Order</button>
+  </div>
+</form>

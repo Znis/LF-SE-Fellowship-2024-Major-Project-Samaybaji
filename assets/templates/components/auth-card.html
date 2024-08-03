@@ -1,0 +1,218 @@
+<div class="auth-card__container">
+  <i
+    class="fa-solid fa-xmark auth-card__cross-button auth-card__cross-button--left"
+    id="auth-card-cross-button-left"
+  ></i>
+  <i
+    class="fa-solid fa-xmark auth-card__cross-button auth-card__cross-button--right"
+    id="auth-card-cross-button-right"
+  ></i>
+  <div class="auth-card__active-box">
+    <div
+      class="auth-card__form auth-card__form--signup auth-card__form--hidden"
+    >
+      <h1 class="auth-card__heading">Register</h1>
+      <form class="auth-card__form-content" autocomplete="off">
+        <input
+          class="auth-card__input"
+          type="text"
+          placeholder="Full Name"
+          id="register-fullname"
+          required
+        />
+        <div
+          class="auth-card__error-message"
+          id="register-fullname-validate-error"
+        ></div>
+        <input
+          type="email"
+          maxlength="50"
+          name="email-field"
+          id="register-email"
+          placeholder="Email"
+          class="auth-card__input"
+          required
+        />
+        <div
+          class="auth-card__error-message"
+          id="register-email-validate-error"
+        ></div>
+        <div class="auth-card__password-input-wrapper">
+          <input
+            class="auth-card__input"
+            id="register-password"
+            name="password-field"
+            type="password"
+            placeholder="Password"
+            pattern="(.{4,})"
+            title="Must contain at least 4 or more characters"
+            required
+          />
+          <i
+            class="fa-solid fa-eye auth-card__password-toggle-icon"
+            name="toggle-password"
+          ></i>
+        </div>
+        <div
+          class="auth-card__error-message"
+          id="register-password-validate-error"
+        ></div>
+        <input
+          class="auth-card__input"
+          type="password"
+          placeholder="Confirm Password"
+          id="register-confirm-password"
+          required
+        />
+        <div
+          class="auth-card__error-message"
+          id="register-confirm-password-validate-error"
+        ></div>
+        <input
+          class="auth-card__input"
+          id="register-phone"
+          name="phonenumber"
+          placeholder="Mobile Number"
+          type="tel"
+          required
+        />
+        <div
+          class="auth-card__error-message"
+          id="register-phone-validate-error"
+        ></div>
+        <div class="auth-card__checkbox">
+          <input
+            class="auth-card__checkbox-input"
+            type="checkbox"
+            id="register-terms-conditions"
+            name="terms-conditions"
+            required
+          />
+          <label class="auth-card__checkbox-label" for="terms-conditions">
+            Agree to all the <a>Terms & Conditions</a></label
+          >
+        </div>
+        <div
+          class="auth-card__error-message"
+          id="register-tc-validate-error"
+        ></div>
+        <button
+          class="auth-card__button auth-card__button--submit"
+          id="register-button"
+        >
+          Register
+        </button>
+        <div
+          class="auth-card__response-message"
+          id="register-response-message"
+        ></div>
+      </form>
+    </div>
+    <div class="auth-card__form auth-card__form--signin">
+      <h1 class="auth-card__heading">Sign In</h1>
+      <form
+        class="auth-card__form-content auth-card__form-content--padded"
+        autocomplete="off"
+      >
+        <input
+          type="email"
+          maxlength="50"
+          name="email-field"
+          id="login-email"
+          placeholder="Email"
+          class="auth-card__input"
+          value="customer4@example.com"
+          required
+        />
+        <div
+          class="auth-card__error-message"
+          id="login-email-validate-error"
+        ></div>
+        <div class="auth-card__password-input-wrapper">
+          <input
+            class="auth-card__input"
+            name="password-field"
+            type="password"
+            id="login-password"
+            placeholder="Password"
+            pattern="(.{4,})"
+            title="Must contain at least 4 or more characters"
+            value="Customer4$"
+            required
+          />
+          <i
+            class="fa-solid fa-eye auth-card__password-toggle-icon"
+            name="toggle-password"
+          ></i>
+        </div>
+        <div
+          class="auth-card__error-message"
+          id="login-password-validate-error"
+        ></div>
+
+        <div class="auth-card__checkbox">
+          <input
+            class="auth-card__checkbox-input"
+            type="checkbox"
+            id="remember-password"
+            name="remember-password"
+          />
+          <label class="auth-card__checkbox-label" for="remember-password"
+            >Remember me</label
+          >
+        </div>
+        <button
+          class="auth-card__button auth-card__button--submit"
+          id="login-button"
+        >
+          Login
+        </button>
+        <div
+          class="auth-card__response-message"
+          id="login-response-message"
+        ></div>
+      </form>
+      <div class="auth-card__divider">
+        <div class="auth-card__horizontal-line"></div>
+        <p class="auth-card__divider-text">OR</p>
+        <div class="auth-card__horizontal-line"></div>
+      </div>
+      <div class="auth-card__other-login-methods">
+        <i class="fa-brands fa-google auth-card__icon"></i>
+        <i class="fa-brands fa-facebook auth-card__icon"></i>
+      </div>
+    </div>
+  </div>
+  <div class="auth-card__sidebox auth-card__sidebox--left">
+    <figure class="auth-card__image-wrapper">
+      <img class="auth-card__image" src="/assets/images/logo-text.png" alt="" />
+    </figure>
+    <figure class="auth-card__image-wrapper">
+      <img
+        class="auth-card__image"
+        src="/assets/images/title-logo.png"
+        alt=""
+      />
+    </figure>
+    <p class="auth-card__account">Have an account?</p>
+    <button class="auth-card__button auth-card__button--switch" id="signin">
+      Login
+    </button>
+  </div>
+  <div class="auth-card__sidebox auth-card__sidebox--right">
+    <figure class="auth-card__image-wrapper">
+      <img class="auth-card__image" src="/assets/images/logo-text.png" alt="" />
+    </figure>
+    <figure class="auth-card__image-wrapper">
+      <img
+        class="auth-card__image"
+        src="/assets/images/title-logo.png"
+        alt=""
+      />
+    </figure>
+    <p class="auth-card__account">Don't have an account?</p>
+    <button class="auth-card__button auth-card__button--switch" id="signup">
+      Sign Up
+    </button>
+  </div>
+</div>

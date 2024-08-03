@@ -1,0 +1,91 @@
+<h3 class="dashboard__heading">Edit Details</h3>
+<div class="dashboard__container" id="edit-details-container">
+  <h3 class="dashboard__container-heading">Details</h3>
+  <form
+    class="dashboard__form"
+    autocomplete="false"
+    id="restaurant-edit-details"
+  >
+    <div class="form__group">
+      <label for="menu-title" class="form__label">Menu Title:</label>
+      <input
+        id="menu-title"
+        name="menu-title"
+        class="form__inputbox"
+        placeholder="Title"
+        type="text"
+        required
+      />
+    </div>
+    <div class="form__group">
+      <label for="menu-description" class="form__label">Description:</label>
+      <textarea
+        id="description"
+        name="menu-description"
+        class="form__inputbox"
+        placeholder="Description"
+        type="text"
+        required
+      ></textarea>
+    </div>
+    <p class="form__error-message" id="menu-edit-error"></p>
+    <button type="submit" class="button" id="edit-menu-button">Edit</button>
+  </form>
+  <form class="dashboard__form" autocomplete="false" id="user-edit-details">
+    <div class="form__group">
+      <label for="user-fullname" class="form__label">Full Name:</label>
+      <input
+        id="user-fullname"
+        name="user-fullname"
+        class="form__inputbox"
+        placeholder="FullName"
+        type="text"
+        required
+      />
+    </div>
+    <div class="form__group">
+      <label for="user-password" class="form__label">Password:</label>
+      <input
+        id="user-password"
+        name="user-password"
+        class="form__inputbox"
+        placeholder="Password"
+        type="password"
+        required
+      />
+    </div>
+    <div class="form__group">
+      <label for="user-confirm-password" class="form__label"
+        >Confirm Password:</label
+      >
+      <input
+        id="user-confirm-password"
+        name="user-confirm-password"
+        class="form__inputbox"
+        placeholder="Password"
+        type="password"
+        required
+      />
+    </div>
+    <div class="form__group">
+      <label for="user-profile-image" class="form__label">Profile Image:</label>
+      <input
+        type="file"
+        id="user-profile-image"
+        name="user-profile-image"
+        class="form__inputbox"
+        accept="image/*"
+        required
+      />
+    </div>
+    <p class="form__error-message" id="customer-edit-error"></p>
+    <button type="submit" class="button" id="edit-profile-button">Edit</button>
+  </form>
+</div>
+<div class="dashboard__container" id="delete-profile-container">
+  <h3 class="dashboard__container-heading">Delete Profile</h3>
+
+  <button class="button" type="button" id="delete-profile-button">
+    Delete
+  </button>
+</div>

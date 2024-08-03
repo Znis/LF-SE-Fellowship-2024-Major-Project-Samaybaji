@@ -1,0 +1,52 @@
+<a href="/" class="logo"
+  ><img
+    src="/assets/images/website-logo.png"
+    title="website logo"
+    alt="website logo"
+/></a>
+<nav class="navbar">
+  <ul>
+    <li><a class="navbar__link" href="" id="home-nav">home</a></li>
+
+    <li><a class="navbar__link" href="" id="menu-nav">menu</a></li>
+  </ul>
+</nav>
+<div class="navbar__button-wrapper">
+  <div class="navbar__cart-wrapper">
+    <div class="navbar__cart-count-circle" id="cart-count-circle">
+      <p class="navbar__cart-count" id="cart-count"></p>
+    </div>
+    <a class="navbar__link" id="cart-nav"
+      ><i class="fa-solid fa-cart-shopping navbar__button"></i
+    ></a>
+  </div>
+  <i class="fa-solid fa-user navbar__button" id="authentication"></i>
+  <div class="navbar__dropdown" id="authenticated-user">
+    <button class="button navbar__authenticated-user">
+      <i class="fa-solid fa-user navbar__authenticated-user-icon"></i>
+      <span class="navbar__authenticated-user-name"></span>
+      <i class="fa-solid fa-caret-down navbar__authenticated-user-icon"></i>
+    </button>
+    <div class="navbar__dropdown-content">
+      <button class="navbar__dropdown-content-action" id="user-dashboard-link">
+        Dashboard
+      </button>
+      <button
+        class="navbar__dropdown-content-action"
+        id="user-restaurant-profile-link"
+      >
+        Switch to Restaurant Profile
+      </button>
+      <button
+        class="navbar__dropdown-content-action"
+        id="user-register-restaurant-link"
+      >
+        Register Restaurant
+      </button>
+
+      <button class="navbar__dropdown-content-action" id="user-logout">
+        Logout
+      </button>
+    </div>
+  </div>
+</div>

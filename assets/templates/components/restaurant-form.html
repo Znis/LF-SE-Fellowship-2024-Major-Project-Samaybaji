@@ -1,0 +1,122 @@
+<h3 class="modal-form__heading"></h3>
+
+<form id="restaurant-form" class="modal-form__form">
+  <i
+    class="fa-solid fa-xmark modal-form__cross-button"
+    id="modal-cross-button"
+  ></i>
+  <div class="form__row-group">
+    <div class="form__group">
+      <label for="name" class="form__label">Restaurant Name:</label>
+      <input
+        type="text"
+        id="restaurant-name"
+        name="name"
+        class="form__inputbox"
+        placeholder="Restaurant Name"
+        required
+      />
+    </div>
+    <div class="form__group">
+      <label for="location" class="form__label">Location:</label>
+      <input
+        type="text"
+        id="location"
+        name="location"
+        class="form__inputbox"
+        placeholder="Location"
+        required
+      />
+    </div>
+  </div>
+  <div class="form__row-group">
+    <div class="form__group">
+      <label for="contactNumber" class="form__label">Contact Number:</label>
+      <input
+        class="form__inputbox"
+        id="contact-number"
+        name="phonenumber"
+        placeholder="Contact Number"
+        type="tel"
+        required
+      />
+    </div>
+
+    <div class="form__group">
+      <label for="panNumber" class="form__label">PAN Number:</label>
+      <input
+        type="text"
+        id="pan-number"
+        name="panNumber"
+        class="form__inputbox"
+        placeholder="PAN Number"
+        required
+      />
+    </div>
+  </div>
+  <div class="form__row-group">
+    <div class="form__group">
+      <label for="openingTime">Opening Time:</label>
+      <input
+        type="time"
+        id="opening-time"
+        name="openingTime"
+        class="form__inputbox"
+        value="09:00"
+        required
+      />
+    </div>
+    <div class="form__group">
+      <label for="closingTime">Closing Time:</label>
+      <input
+        type="time"
+        id="closing-time"
+        name="closingTime"
+        class="form__inputbox"
+        value="21:00"
+        required
+      />
+    </div>
+  </div>
+
+  <div class="form__row-group">
+    <div class="form__group">
+      <label for="profilePic" class="form__label">Profile Picture URL:</label>
+      <input
+        type="file"
+        id="profile-image"
+        name="profilePic"
+        class="form__inputbox"
+        accept="image/*"
+        required
+      />
+    </div>
+
+    <div class="form__group">
+      <label for="coverPic" class="form__label">Cover Picture URL:</label>
+      <input
+        type="file"
+        id="cover-image"
+        name="coverPic"
+        class="form__inputbox"
+        required
+      />
+    </div>
+  </div>
+
+  <div class="form__row-group">
+    <div class="form__group">
+      <label for="description" class="form__label">Description:</label>
+      <textarea
+        id="description"
+        name="description"
+        class="form__inputbox"
+        placeholder="Description"
+        required
+      ></textarea>
+    </div>
+  </div>
+  <p class="form__error-message"></p>
+
+  <button type="submit" class="button" id="form-submit-button"></button>
+</form>
